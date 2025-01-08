@@ -1,0 +1,15 @@
+ConvLSTM Layer
+The model leverages ConvLSTM2D, a combination of convolutional layers and LSTM units, to predict cloud cover:
+
+ConvLSTM2D Layer: Captures spatiotemporal features by applying convolutional operations on the input sequence of images.
+Batch Normalization: Normalizes the output of each convolutional layer to improve training speed and stability.
+Residual Connections: Introduced in the model to allow for deeper layers without vanishing gradients, ensuring that important features are passed forward.
+TimeDistributed Layer: Allows the model to apply 2D convolution to each frame in a sequence independently.
+Sigmoid Activation: The final output layer uses the sigmoid activation function to output predicted cloud cover values in the range [0, 1].
+
+Model Evaluation
+SSIM (Structural Similarity Index)
+SSIM is a metric used to measure the similarity between two images. It evaluates luminance, contrast, and structure. The closer the SSIM score is to 1, the more similar the two images are.
+MSE (Mean Squared Error)
+MSE calculates the average squared differences between the predicted and actual values, providing a quantitative measure of the prediction error. Lower MSE indicates better predictions.
+
