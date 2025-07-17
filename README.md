@@ -1,5 +1,5 @@
 # Cloud Cover Nowcasting
-This project aims to predict cloud cover using a sequence-to-sequence ConvLSTM (Convolutional Long Short-Term Memory) model. The goal is to predict future cloud cover based on past satellite images. The model uses satellite .tif images taken at regular intervals to forecast cloud patterns, aiding in weather prediction and climate monitoring.
+This project aims to predict cloud cover using a sequence-to-sequence ConvLSTM (Convolutional Long Short-Term Memory) model. The goal is to predict future cloud cover based on past satellite images. The model uses INSAT3D satellite's .tif images taken at regular intervals to forecast cloud patterns, aiding in weather prediction and climate monitoring.
 
 ## Features
 Satellite Image Processing: The model processes `.tif` images, which are commonly used in satellite data, providing high-resolution, geospatial information.
